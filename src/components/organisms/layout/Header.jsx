@@ -1,22 +1,16 @@
-import { PiCoffeeLight } from 'react-icons/pi';
-import { GrCafeteria } from 'react-icons/gr';
-import { PiGasCan } from 'react-icons/pi';
 import { IoIosSearch } from 'react-icons/io';
+import HeaderButtons from '../../common/Button/HeaderButtons';
+import LogoButton from '../../common/Button/LogoButton';
 
 const Header = () => {
 	return (
 		<header className="w-full h-20 bg-orange-100">
 			<container className="flex gap-2 h-full justify-center items-center">
-				<div
-					id="brandLogo"
-					className="basis-72 p-4 h-full text-4xl cursor-pointer"
-				>
-					GamzaMap
-				</div>
+				<LogoButton logoName="GamzaMap" />
 				<form className="basis-1/2">
 					<div class="relative">
 						<div class="absolute inset-y-0 end-3 flex items-center cursor-pointer">
-							<IoIosSearch className=" text-3xl" />
+							<IoIosSearch className="text-3xl" />
 						</div>
 						<input
 							type="search"
@@ -28,18 +22,9 @@ const Header = () => {
 					</div>
 				</form>
 				<div id="locationSection" className=" basis-2/3 flex gap-6 mx-4">
-					<button className=" w-36 h-12 bg-white rounded-3xl border border-zinc-600 flex justify-center items-center gap-2">
-						<PiCoffeeLight className="text-3xl" />
-						<span className="text-2xl">카페</span>
-					</button>
-					<button className=" w-36 h-12 bg-white rounded-3xl border border-zinc-600 flex justify-center items-center gap-2">
-						<GrCafeteria className="text-3xl" />
-						<span className="text-2xl">식당</span>
-					</button>
-					<button className=" w-36 h-12 bg-white rounded-3xl border border-zinc-600 flex justify-center items-center gap-2">
-						<PiGasCan className="text-3xl" />
-						<span className="text-2xl">주유소</span>
-					</button>
+					<HeaderButtons icon="cafe" text="카페" />
+					<HeaderButtons icon="restaurant" text="식당" />
+					<HeaderButtons icon="gas" text="주유소" />
 				</div>
 				<div id="profileSection" className=" basis-40">
 					<img
