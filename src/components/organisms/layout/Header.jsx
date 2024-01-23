@@ -1,24 +1,20 @@
 import { IoIosSearch } from 'react-icons/io';
 import HeaderButtons from '../../common/Button/HeaderButtons';
 import LogoButton from '../../common/Button/LogoButton';
+import ProfileButton from '../../common/Button/ProfileButton';
+import SearchInput from '../../common/Input/SearchInput';
 
 const Header = () => {
 	return (
-		<header className="w-full h-20 bg-orange-100">
-			<container className="flex gap-2 h-full justify-center items-center">
+		<header className="w-full h-20 bg-beg-1">
+			<div className="flex gap-2 h-full justify-center items-center">
 				<LogoButton logoName="GamzaMap" />
 				<form className="basis-1/2">
-					<div class="relative">
-						<div class="absolute inset-y-0 end-3 flex items-center cursor-pointer">
+					<div className="relative">
+						<div className="absolute inset-y-0 end-3 flex items-center cursor-pointer">
 							<IoIosSearch className="text-3xl" />
 						</div>
-						<input
-							type="search"
-							id="searchBar"
-							class="block w-full p-4 pe-10 text-lg text-gray-900 border border-zinc-600 rounded-xl"
-							placeholder="장소를 검색해주세요"
-							required
-						/>
+						<SearchInput />
 					</div>
 				</form>
 				<div id="locationSection" className=" basis-2/3 flex gap-6 mx-4">
@@ -27,12 +23,9 @@ const Header = () => {
 					<HeaderButtons icon="gas" text="주유소" />
 				</div>
 				<div id="profileSection" className=" basis-40">
-					<img
-						className="w-16 h-16 rounded-full border border-black border- cursor-pointer mx-auto"
-						src="profile.svg"
-					/>
+					<ProfileButton />
 				</div>
-			</container>
+			</div>
 		</header>
 	);
 };
