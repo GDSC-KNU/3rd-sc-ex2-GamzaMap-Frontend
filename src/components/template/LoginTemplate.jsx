@@ -5,7 +5,7 @@ const LoginTemplate = () => {
 		<>
 			<div
 				id="loginArea"
-				className="w-[582px] h-[605px] bg-slate-300 mx-auto mt-[89px] rounded-[20px]"
+				className="w-[582px] h-[605px] bg-white mx-auto mt-[89px] rounded-[20px]"
 			>
 				<div className="text-[60px] text-center p-[30px]">GamzaMap</div>
 				<LoginForm />
