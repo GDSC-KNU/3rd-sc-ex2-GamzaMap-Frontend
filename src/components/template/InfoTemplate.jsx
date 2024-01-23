@@ -1,5 +1,5 @@
 const InfoTemplate = () => {
-    return <>InfoTemplate</>;
+	return <>InfoTemplate</>;
 };
 
 export default InfoTemplate;

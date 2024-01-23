@@ -1,5 +1,5 @@
 const ChattingTemplate = () => {
-    return <>ChattingTemplate</>;
+	return <>ChattingTemplate</>;
 };
 
 export default ChattingTemplate;

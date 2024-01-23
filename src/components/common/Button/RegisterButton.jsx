@@ -1,5 +1,5 @@
 const RegisterButton = () => {
-    return <>RegisterButton</>;
+	return <>RegisterButton</>;
 };
 
 export default RegisterButton;

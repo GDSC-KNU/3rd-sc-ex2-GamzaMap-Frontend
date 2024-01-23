@@ -1,5 +1,5 @@
 const BossTemplate = () => {
-    return <>BossTemplate</>;
+	return <>BossTemplate</>;
 };
 
 export default BossTemplate;

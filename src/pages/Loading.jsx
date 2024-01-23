@@ -1,11 +1,11 @@
 import LoadingTemplate from '../components/template/LoadingTemplate';
 
 const LoadingPage = () => {
-    return (
-        <>
-            <LoadingTemplate />
-        </>
-    );
+	return (
+		<>
+			<LoadingTemplate />
+		</>
+	);
 };
 
 export default LoadingPage;

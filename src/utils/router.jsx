@@ -11,41 +11,41 @@ import PickPage from '../pages/pick';
 import DetailPage from '../pages/Detail';
 
 const router = createBrowserRouter([
-    { index: true, path: '/', element: <HomePage /> },
-    {
-        path: 'auth',
-        children: [
-            {
-                path: 'login',
-                element: <LoginPage />,
-            },
-            {
-                path: 'register',
-                element: <RegisterPage />,
-            },
-        ],
-    },
-    { path: 'chatting', element: <ChattingPage /> },
-    {
-        path: 'mypage',
-        children: [
-            {
-                path: '',
-                element: <InfoPage />,
-            },
-            {
-                path: 'profile',
-                element: <EditProfilePage />,
-            },
-            {
-                path: 'boss',
-                element: <BossPage />,
-            },
-        ],
-    },
-    { path: 'search', element: <SearchPage /> },
-    { path: 'pick', element: <PickPage /> },
-    { path: 'detail', element: <DetailPage /> },
+	{ index: true, path: '/', element: <HomePage /> },
+	{
+		path: 'auth',
+		children: [
+			{
+				path: 'login',
+				element: <LoginPage />,
+			},
+			{
+				path: 'register',
+				element: <RegisterPage />,
+			},
+		],
+	},
+	{ path: 'chatting', element: <ChattingPage /> },
+	{
+		path: 'mypage',
+		children: [
+			{
+				path: '',
+				element: <InfoPage />,
+			},
+			{
+				path: 'profile',
+				element: <EditProfilePage />,
+			},
+			{
+				path: 'boss',
+				element: <BossPage />,
+			},
+		],
+	},
+	{ path: 'search', element: <SearchPage /> },
+	{ path: 'pick', element: <PickPage /> },
+	{ path: 'detail', element: <DetailPage /> },
 ]);
 
 export default router;

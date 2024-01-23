@@ -1,5 +1,5 @@
 const RegisterTemplate = () => {
-    return <>RegisterTemplate</>;
+	return <>RegisterTemplate</>;
 };
 
 export default RegisterTemplate;

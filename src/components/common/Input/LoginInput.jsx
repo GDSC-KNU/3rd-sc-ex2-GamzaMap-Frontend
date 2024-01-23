@@ -1,5 +1,5 @@
 const LoginInput = () => {
-    return <>LoginInput</>;
+	return <>LoginInput</>;
 };
 
 export default LoginInput;

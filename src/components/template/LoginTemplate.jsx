@@ -1,5 +1,5 @@
 const LoginTemplate = () => {
-    return <>LoginTemplate</>;
+	return <>LoginTemplate</>;
 };
 
 export default LoginTemplate;

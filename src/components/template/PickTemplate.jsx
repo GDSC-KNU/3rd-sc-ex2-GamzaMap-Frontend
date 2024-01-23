@@ -1,5 +1,5 @@
 const PickTemplate = () => {
-    return <>PickTemplate</>;
+	return <>PickTemplate</>;
 };
 
 export default PickTemplate;

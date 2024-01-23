@@ -1,5 +1,5 @@
 const PickPage = () => {
-    return <>PickPage</>;
+	return <>PickPage</>;
 };
 
 export default PickPage;

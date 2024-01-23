@@ -1,5 +1,5 @@
 const EditProfileTemplate = () => {
-    return <>EditProfileTemplate</>;
+	return <>EditProfileTemplate</>;
 };
 
 export default EditProfileTemplate;

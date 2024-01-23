@@ -1,5 +1,5 @@
 const DetailTemplate = () => {
-    return <>DetailTemplate</>;
+	return <>DetailTemplate</>;
 };
 
 export default DetailTemplate;

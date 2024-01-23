@@ -1,11 +1,11 @@
 import DetailTemplate from '../components/template/DetailTemplate';
 
 const DetailPage = () => {
-    return (
-        <>
-            <DetailTemplate />
-        </>
-    );
+	return (
+		<>
+			<DetailTemplate />
+		</>
+	);
 };
 
 export default DetailPage;
