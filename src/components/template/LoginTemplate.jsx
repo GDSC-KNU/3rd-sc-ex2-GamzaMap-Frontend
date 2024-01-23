@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import LoginForm from '../common/Form/LoginForm';
 const LoginTemplate = () => {
 	return (
@@ -9,10 +10,10 @@ const LoginTemplate = () => {
 				<div className="text-[60px] text-center p-[30px]">GamzaMap</div>
 				<LoginForm />
 				<div className="text-[20px] text-center mt-[40px]">
-					아직 회원이 아니신가요?{' '}
-					<a href="" className="font-bold">
+					<span>아직 회원이 아니신가요? </span>
+					<Link to="/auth/register" className="font-bold">
 						회원가입
-					</a>
+					</Link>
 				</div>
 			</div>
 		</>
