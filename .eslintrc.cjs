@@ -19,6 +19,6 @@ module.exports = {
 		],
 		'react/prop-types': 'off', // 프로퍼티 타입 검사 규칙 비활성화
 		'react/display-name': 'off', // 디스플레이 네임 검사 규칙 비활성화
-		'prettier/prettier': 'warning', // prettier 규칙 위반시 경고
+		'prettier/prettier': 1, // prettier 규칙 위반시 경고
 	},
 };
