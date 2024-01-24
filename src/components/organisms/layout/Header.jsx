@@ -1,4 +1,5 @@
 import { IoIosSearch } from 'react-icons/io';
+
 import HeaderButtons from '../../common/Button/HeaderButtons';
 import LogoButton from '../../common/Button/LogoButton';
 import ProfileButton from '../../common/Button/ProfileButton';
@@ -17,12 +18,12 @@ const Header = () => {
 						<SearchInput />
 					</div>
 				</form>
-				<div id="locationSection" className=" basis-2/3 flex gap-6 mx-4">
+				<div id="locationSection" className="basis-2/3 flex gap-6 mx-4">
 					<HeaderButtons icon="cafe" text="카페" />
 					<HeaderButtons icon="restaurant" text="식당" />
 					<HeaderButtons icon="gas" text="주유소" />
 				</div>
-				<div id="profileSection" className=" basis-40">
+				<div id="profileSection" className="basis-40">
 					<ProfileButton />
 				</div>
 			</div>
