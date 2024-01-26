@@ -4,6 +4,9 @@ import image2 from '../../assets/image2.svg';
 import image3 from '../../assets/image3.svg';
 import image4 from '../../assets/image4.svg';
 import SaveButton from '../common/Button/SaveButton';
+
+const images = [image1, image2, image3, image4];
+
 const EditProfileTemplate = () => {
 	return (
 		<ProfileBox>
@@ -11,26 +14,14 @@ const EditProfileTemplate = () => {
 				원하는 프로필을 선택해주세요
 			</div>
 			<div className="flex flex-wrap gap-3 justify-center mt-6">
-				<img
-					src={image1}
-					alt=""
-					className="w-24 h-24 object-cover rounded-md border border-neutral-200"
-				/>
-				<img
-					src={image2}
-					alt=""
-					className="w-24 h-24 object-cover rounded-md border border-neutral-200"
-				/>
-				<img
-					src={image3}
-					alt=""
-					className="w-24 h-24 object-cover rounded-md border border-neutral-200"
-				/>
-				<img
-					src={image4}
-					alt=""
-					className="w-24 h-24 object-cover rounded-md border border-neutral-200"
-				/>
+				{images.map((image, index) => (
+					<img
+						key={index}
+						src={image}
+						alt=""
+						className="w-24 h-24 object-cover rounded-md border border-neutral-200 cursor-pointer hover:scale-110 transition-transform ease-in-out duration-500"
+					/>
+				))}
 			</div>
 			<SaveButton />
 		</ProfileBox>
