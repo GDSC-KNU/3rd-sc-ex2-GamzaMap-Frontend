@@ -1,17 +1,15 @@
 import LogoutButton from '../../common/Button/LogoutButton';
 import QuestionOwner from './QuestionOwner';
 import ProfileDetail from './ProfileDetail';
-const EditProfile_index = () => {
+import ProfileBox from './ProfileBox';
+const EditProfileIndex = () => {
 	return (
-		<div
-			id="infoBox"
-			className="max-w-[350px] mx-auto h-96 rounded-[20px] bg-white p-6 relative border border-neutral-500 "
-		>
+		<ProfileBox>
 			<ProfileDetail />
 			<LogoutButton />
 			<QuestionOwner />
-		</div>
+		</ProfileBox>
 	);
 };
 
-export default EditProfile_index;
+export default EditProfileIndex;
