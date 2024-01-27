@@ -1,7 +1,6 @@
 import ProfileBox from '../organisms/EditProfile/ProfileBox';
-import SaveButton from '../common/Button/SaveButton';
 import SelectedImages from '../organisms/EditProfile/SelectedImages';
-
+import InteractionButton from '../organisms/EditProfile/InteractionButton';
 const EditProfileTemplate = () => {
 	return (
 		<ProfileBox>
@@ -9,7 +8,7 @@ const EditProfileTemplate = () => {
 				원하는 프로필을 선택해주세요
 			</div>
 			<SelectedImages />
-			<SaveButton />
+			<InteractionButton mt="mt-5" detail="저장하기" />
 		</ProfileBox>
 	);
 };
