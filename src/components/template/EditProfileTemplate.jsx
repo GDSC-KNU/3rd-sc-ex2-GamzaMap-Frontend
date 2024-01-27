@@ -15,12 +15,13 @@ const EditProfileTemplate = () => {
 			</div>
 			<div className="flex flex-wrap gap-3 justify-center mt-6">
 				{images.map((image, index) => (
-					<img
-						key={index}
-						src={image}
-						alt=""
-						className="w-24 h-24 object-cover rounded-md border border-neutral-200 cursor-pointer hover:scale-110 transition-transform ease-in-out duration-500"
-					/>
+					<div key={index} className="w-24 h-24 ">
+						<img
+							src={image}
+							alt=""
+							className="object-cover cursor-pointer hover:scale-110 transition-transform ease-in-out duration-500"
+						/>
+					</div>
 				))}
 			</div>
 			<SaveButton />
