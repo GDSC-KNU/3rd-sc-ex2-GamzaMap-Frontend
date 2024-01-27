@@ -1,8 +1,22 @@
 const InteractionButton = ({ mt, detail }) => {
+	const handleClick = () => {
+		if (detail === '로그아웃') {
+			console.log(detail);
+			//로그아웃 코드
+		} else if (detail === '저장하기') {
+			console.log(detail);
+			//저장하기 코드
+		} else if (detail === '등록하기') {
+			console.log(detail);
+			//등록하기 코드
+		}
+	};
+
 	return (
 		<div
 			id="logout"
 			className={`h-10 mx-auto ${mt} bg-beg-1 rounded-lg flex justify-center items-center text-xs cursor-pointer hover:bg-beg-2`}
+			onClick={handleClick}
 		>
 			{detail}
 		</div>
