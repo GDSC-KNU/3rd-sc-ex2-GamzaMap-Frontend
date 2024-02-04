@@ -1,4 +1,4 @@
-const CheckBossInput = ({ label, register, errors }) => {
+const BussinessNumber = ({ label, register, errors }) => {
 	const error = { ...errors };
 	return (
 		<div className="mt-1 flex flex-col">
@@ -19,4 +19,4 @@ const CheckBossInput = ({ label, register, errors }) => {
 	);
 };
 
-export default CheckBossInput;
+export default BussinessNumber;
