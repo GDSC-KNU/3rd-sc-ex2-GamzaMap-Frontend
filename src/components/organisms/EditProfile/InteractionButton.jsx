@@ -1,13 +1,19 @@
+import { useNavigate } from 'react-router-dom';
+
 const InteractionButton = ({ mt, detail }) => {
+	const navigate = useNavigate();
 	const handleClick = () => {
 		if (detail === '로그아웃') {
 			console.log(detail);
+			navigate('/');
 			//로그아웃 코드
 		} else if (detail === '저장하기') {
 			console.log(detail);
+			navigate('/mypage');
 			//저장하기 코드
 		} else if (detail === '등록하기') {
 			console.log(detail);
+			navigate('/mypage');
 			//등록하기 코드
 		}
 	};
