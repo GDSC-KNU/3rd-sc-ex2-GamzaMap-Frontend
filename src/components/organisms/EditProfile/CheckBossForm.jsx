@@ -2,6 +2,7 @@ import InteractionButton from './InteractionButton';
 import CheckBossInput from './CheckBossInput';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import ShopNameInput from './ShopNameInput';
 const CheckBossForm = () => {
 	const navigate = useNavigate();
 	const {
@@ -13,9 +14,10 @@ const CheckBossForm = () => {
 		console.log(data);
 		navigate('/mypage');
 	};
+
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<CheckBossInput label="상호명" register={register} errors={errors} />
+			<ShopNameInput label="상호명" register={register} errors={errors} />
 			<CheckBossInput label="위치" register={register} errors={errors} />
 			<CheckBossInput label="사업자번호" register={register} errors={errors} />
 			<label className="flex mt-16">
