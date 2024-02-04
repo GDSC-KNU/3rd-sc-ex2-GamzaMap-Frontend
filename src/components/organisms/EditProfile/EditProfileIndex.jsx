@@ -6,7 +6,7 @@ const EditProfileIndex = () => {
 	return (
 		<ProfileBox>
 			<ProfileDetail />
-			<InteractionButton mt="mt-5" detail="로그아웃" />
+			<InteractionButton mt="mt-5" detail="로그아웃" isForm={false} />
 			<QuestionOwner />
 		</ProfileBox>
 	);
