@@ -5,7 +5,7 @@ import RegisterPage from '../pages/Register';
 import ChattingPage from '../pages/Chatting';
 import EditProfilePage from '../pages/EditProfile';
 import InfoPage from '../pages/Info';
-import BossPage from '../pages/Boss';
+import CheckBossPage from '../pages/CheckBossPage';
 import SearchPage from '../pages/Search';
 import PickPage from '../pages/pick';
 import DetailPage from '../pages/Detail';
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
 				element: <EditProfilePage />,
 			},
 			{
-				path: 'boss',
-				element: <BossPage />,
+				path: 'checkboss',
+				element: <CheckBossPage />,
 			},
 		],
 	},

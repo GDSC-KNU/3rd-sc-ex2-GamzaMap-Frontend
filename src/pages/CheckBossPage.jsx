@@ -1,6 +1,6 @@
 import BossTemplate from '../components/template/BossTemplate';
 
-const BossPage = () => {
+const CheckBossPage = () => {
 	return (
 		<>
 			<BossTemplate />
@@ -8,4 +8,4 @@ const BossPage = () => {
 	);
 };
 
-export default BossPage;
+export default CheckBossPage;
