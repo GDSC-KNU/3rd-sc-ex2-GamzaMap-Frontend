@@ -8,6 +8,7 @@ export default {
 				'beg-1': '#FFEDDC',
 				'beg-2': '#FFD7B2',
 				'gry-1': '#626161',
+				'border-color': '#A8A9AA',
 			},
 		},
 	},

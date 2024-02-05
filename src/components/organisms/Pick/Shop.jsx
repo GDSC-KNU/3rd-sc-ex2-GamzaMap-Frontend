@@ -9,13 +9,10 @@ const Shop = ({ imageUrl, shopname, rating, reviewCount, address }) => {
 	return (
 		<div
 			id="itemBox"
-			className="w-64 p-4 border-2 border-neutral-400  rounded-2xl"
+			className="w-64 p-4 border-2 border-border-color  rounded-2xl"
 		>
-			<img
-				src={imageUrl}
-				className=" w-full h-36 rounded-md object-cover"
-			></img>
-			<div className=" text-xl mt-2">{shopname}</div>
+			<img src={imageUrl} className="w-full h-36 rounded-md object-cover"></img>
+			<div className="text-xl mt-2">{shopname}</div>
 			<div className="flex mt-2 text-sm gap-2 items-center">
 				<div className="flex items-center">{formattedRating}</div>
 				<div className="flex items-center">

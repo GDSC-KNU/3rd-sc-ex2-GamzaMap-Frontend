@@ -66,7 +66,7 @@ const PickTemplate = () => {
 		<>
 			<div
 				id="container"
-				className=" mx-auto max-w-[1080px] mt-6 flex gap-x-4 gap-y-3 flex-wrap "
+				className="mx-auto max-w-[1080px] mt-6 flex gap-x-4 gap-y-3 flex-wrap "
 			>
 				{DB.map((item, index) => {
 					//db 데이터를 map으로 돌려서 Shop 컴포넌트에 전달
