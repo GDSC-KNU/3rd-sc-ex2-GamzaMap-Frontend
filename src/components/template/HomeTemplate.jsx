@@ -4,6 +4,7 @@ const HomeTemplate = () => {
 	return (
 		<>
 			<Header />
+			<div>지도넣기</div>
 		</>
 	);
 };
