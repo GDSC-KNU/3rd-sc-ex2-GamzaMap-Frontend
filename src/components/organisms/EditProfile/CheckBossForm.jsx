@@ -23,6 +23,9 @@ const CheckBossForm = () => {
 	} = useForm();
 	const onSubmit = (data) => {
 		console.log(data);
+		//서버로 데이터 전송
+		//location 변수에 상호명, 좌표값 존재
+		//data 변수에 사업자 번호 존재
 		navigate('/mypage');
 	};
 
