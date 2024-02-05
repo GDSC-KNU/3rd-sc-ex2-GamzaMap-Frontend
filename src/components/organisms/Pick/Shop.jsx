@@ -32,7 +32,7 @@ const Shop = ({ imageUrl, shopname, rating, reviewCount, address }) => {
 				<img src={mapIcon} className="h-5" />
 				<div className="text-xs">{address}</div>
 			</div>
-			<div className="mt-2 h-9 bg-beg-2 rounded-lg flex items-center justify-center text-sm hover:cursor-pointer hover:bg-beg-1">
+			<div className="mt-8 h-9 bg-beg-2 rounded-lg flex items-center justify-center text-sm hover:cursor-pointer hover:bg-beg-1">
 				채팅방 입장하기
 			</div>
 		</div>
