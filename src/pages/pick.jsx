@@ -1,5 +1,126 @@
+import Header from '../components/organisms/layout/Header';
+import filledStar from '../assets/filledStar.svg';
+import emptyStar from '../assets/emptyStar.svg';
+import mapIcon from '../assets/mapIcon.svg';
+import shopImageSample from '../assets/shopImageSample.svg';
+const DB = [
+	{
+		shopName: '상호명',
+		rating: 4.0,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 3.2,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 4.8,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 2.3,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 4.0,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 4.0,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 4.0,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+	{
+		shopName: '상호명',
+		rating: 4.0,
+		reviewCount: 56,
+		address: '대구광역시 북구 산격동 1393-13',
+		imageUrl: shopImageSample,
+	},
+];
+
+const ItemBox = ({ imageUrl, shopname, rating, reviewCount, address }) => {
+	const filledStarCount = Math.floor(rating);
+	const emptyStarCount = 5 - filledStarCount;
+	return (
+		<div
+			id="itemBox"
+			className="w-64 p-4 border-2 border-neutral-400  rounded-2xl"
+		>
+			<img
+				src={imageUrl}
+				className=" w-full h-36 rounded-md object-cover"
+			></img>
+			<div className=" text-xl mt-2">{shopname}</div>
+			<div className="flex mt-2 text-sm gap-2 items-center">
+				<div className="flex items-center">{rating}</div>
+				<div className="flex items-center">
+					{[...Array(filledStarCount)].map((_, index) => (
+						<img key={index} src={filledStar} className="h-4" />
+					))}
+					{[...Array(emptyStarCount)].map((_, index) => (
+						<img key={index} src={emptyStar} className="h-4" />
+					))}
+				</div>
+				<div className="flex items-center">({reviewCount})</div>
+			</div>
+			<div className="flex mt-2 gap-2 items-center">
+				<img src={mapIcon} className="h-5" />
+				<div className="text-xs">{address}</div>
+			</div>
+			<div className="mt-2 h-9 bg-beg-2 rounded-lg flex items-center justify-center text-sm hover:cursor-pointer hover:bg-beg-1">
+				채팅방 입장하기
+			</div>
+		</div>
+	);
+};
+
 const PickPage = () => {
-	return <>작업시작</>;
+	return (
+		<>
+			<Header />
+			<div
+				id="container"
+				className=" mx-auto w-4/5 mt-6 flex gap-x-4 gap-y-3 flex-wrap"
+			>
+				{DB.map((item, index) => {
+					return (
+						<ItemBox
+							key={index}
+							imageUrl={item.imageUrl}
+							shopname={item.shopName}
+							rating={item.rating}
+							reviewCount={item.reviewCount}
+							address={item.address}
+						/>
+					);
+				})}
+			</div>
+		</>
+	);
 };
 
 export default PickPage;
