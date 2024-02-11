@@ -4,9 +4,9 @@ const HomePage = () => {
 	return (
 		<>
 			<HomeTemplate />
-			<div>
+			<div className="flex">
 				<Sidebar />
-				<div>home</div>
+				<div>page will show here!</div>
 			</div>
 		</>
 	);
