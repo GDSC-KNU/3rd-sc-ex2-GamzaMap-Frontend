@@ -23,4 +23,5 @@ export const ContentContainer = styled.div`
     text-align: center;
     /* background-color: var(--color-clay); */
     background-color: #ffedd5;
+    overflow: auto;
 `;
