@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+
 import HomePage from '../pages/Home';
 import LoginPage from '../pages/Login';
 import RegisterPage from '../pages/Register';
@@ -9,6 +10,7 @@ import CheckBossPage from '../pages/CheckBossPage';
 import SearchPage from '../pages/Search';
 import PickPage from '../pages/pick';
 import DetailPage from '../pages/Detail';
+import MapPage from '../pages/Map';
 
 const router = createBrowserRouter([
 	{ index: true, path: '/', element: <HomePage /> },
@@ -45,6 +47,7 @@ const router = createBrowserRouter([
 	},
 	{ path: 'search', element: <SearchPage /> },
 	{ path: 'pick', element: <PickPage /> },
+	{ path: 'map', element: <MapPage /> },
 	{ path: 'detail', element: <DetailPage /> },
 ]);
 
