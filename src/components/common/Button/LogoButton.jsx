@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom';
+import { TextContainer } from '../../../styles/HeaderStyle';
+
 const LogoButton = ({ logoName }) => {
 	return (
 		<>
-			<div
-				id="brandLogo"
-				className="basis-72 p-4 h-full text-4xl cursor-pointer"
-			>
-				{logoName}
-			</div>
+			<TextContainer id="GamzaLogo">
+				<Link to="/">{logoName}</Link>
+			</TextContainer>
 		</>
 	);
 };
