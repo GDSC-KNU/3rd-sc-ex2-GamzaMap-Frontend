@@ -11,14 +11,13 @@ import {
 const LoginButton = () => {
     const [imgSrc, setImgSrc] = useState(LoginBtn);
     const [isClicked, setIsClicked] = useState(false);
-
-    const navigate = useNavigate();
+    const [nav, setNav] = useState('/auth/login');
 
     const onClickHandler = () => {
         if (isClicked) {
             setImgSrc(UserImg);
             setIsClicked(false);
-            navigate('/auth/login');
+            setNav('/auth/login');
         } else {
             setImgSrc(LoginBtn);
             setIsClicked(true);
@@ -28,7 +27,9 @@ const LoginButton = () => {
         <>
             <ProfileContainer id="ProfileContainer">
                 <ProfileButtonStyle>
-                    <img onClick={onClickHandler} src={imgSrc} />
+                    <a href={nav}>
+                        <img onClick={onClickHandler} src={imgSrc} />
+                    </a>
                 </ProfileButtonStyle>
                 {/* <ProfileButton /> */}
             </ProfileContainer>
