@@ -67,7 +67,6 @@ export const InputItem = styled.input`
 
 export const ButtonContainer = styled.div`
     width: 300px;
-    height: 89px;
     flex-shrink: 0;
 `;
 
@@ -77,8 +76,6 @@ export const ButtonWrapper = styled.div`
     height: 40px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
 `;
 
 export const ButtonItem = styled.button`
@@ -100,5 +97,36 @@ export const ButtonText = styled.span`
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+`;
+
+export const TextContainer = styled.div`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+`;
+
+export const TextWrapper = styled.div`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+`;
+
+export const TextItem01 = styled.div`
+    color: #000;
+    font-family: Jua;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+`;
+
+export const TextItem02 = styled.a`
+    color: #3a81bf;
+    font-family: Jua;
+    font-size: 1.5rem;
+    font-style: normal;
     line-height: normal;
 `;
