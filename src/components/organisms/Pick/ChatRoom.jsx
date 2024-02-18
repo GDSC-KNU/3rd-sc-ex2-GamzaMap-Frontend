@@ -1,5 +1,6 @@
 import {
     AddressContainer,
+    AddressText,
     ChattingRoomContainer,
     EmptyStar,
     EnterButtonContainer,
@@ -38,7 +39,8 @@ const ChatRoom = () => {
                         <RatingText>(56)</RatingText>
                     </RatingContainer>
                     <AddressContainer>
-                        Daegu Buk-gu Sangyeok-ro 6-gil 1393-13
+                        <AddressText>Daegu Buk-gu</AddressText>
+                        <AddressText>Sangyeok-ro 6-gil 1393-13</AddressText>
                     </AddressContainer>
                 </StoreInfoContainer>
                 <EnterButtonContainer>Enter the chat room</EnterButtonContainer>

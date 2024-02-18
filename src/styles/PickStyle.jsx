@@ -102,7 +102,16 @@ export const EmptyStar = styled.img`
 
 export const AddressContainer = styled.span`
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    align-self: stretch;
+`;
+
+export const AddressText = styled.span`
+    display: flex;
+    align-items: flex-start;
     gap: 10px;
 
     color: #000;
