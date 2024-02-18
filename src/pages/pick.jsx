@@ -1,11 +1,5 @@
-import PickTemplate from '../components/template/PickTemplate';
-
 const PickPage = () => {
-    return (
-        <>
-            <PickTemplate />
-        </>
-    );
+	return <>PickPage</>;
 };
 
 export default PickPage;
