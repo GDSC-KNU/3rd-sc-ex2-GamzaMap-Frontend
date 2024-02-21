@@ -18,7 +18,7 @@ export const loginResult = (email, password) => {
             );
 
             dispatch(loginActions.setEmail(response.email));
-            dispatch(loginActions.setPassword(response.pw));
+            dispatch(loginActions.setPassword(response.password));
         } catch (error) {
             alert('로그인에 실패했습니다.');
             throw new Error(error);
