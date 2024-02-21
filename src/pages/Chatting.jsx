@@ -1,11 +1,11 @@
 import ChattingTemplate from '../components/template/ChattingTemplate';
 
 const ChattingPage = () => {
-    return (
-        <>
-            <ChattingTemplate />
-        </>
-    );
+	return (
+		<>
+			<ChattingTemplate />
+		</>
+	);
 };
 
 export default ChattingPage;

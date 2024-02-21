@@ -1,11 +1,11 @@
 import SearchTemplate from '../components/template/SearchTemplate';
 
 const SearchPage = () => {
-    return (
-        <>
-            <SearchTemplate />
-        </>
-    );
+	return (
+		<>
+			<SearchTemplate />
+		</>
+	);
 };
 
 export default SearchPage;

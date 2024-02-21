@@ -1,11 +1,11 @@
 import RegisterTemplate from '../components/template/RegisterTemplate';
 
 const RegisterPage = () => {
-    return (
-        <>
-            <RegisterTemplate />
-        </>
-    );
+	return (
+		<>
+			<RegisterTemplate />
+		</>
+	);
 };
 
 export default RegisterPage;

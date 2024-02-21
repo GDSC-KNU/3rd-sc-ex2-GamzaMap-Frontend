@@ -1,5 +1,5 @@
 const SearchTemplate = () => {
-    return <>SearchTemplate</>;
+	return <>SearchTemplate</>;
 };
 
 export default SearchTemplate;
