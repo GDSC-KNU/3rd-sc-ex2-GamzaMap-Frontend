@@ -1,27 +1,15 @@
 import {
     AllChatContainer,
     ChatListContainer,
-    ChatNumberContainer,
-    ChatNumberText,
     ChatRoomContainer,
-    ChatRoomListContainer,
     ChatRoomText,
     ChatStateContainer,
     GamzaImg,
-    LastChatContainer,
-    LastChatText,
     Line,
-    RoomContainer,
-    RoomInfoContainer,
-    RoomListContainer,
-    StoreImg,
-    StoreImgContainer,
-    StoreTitleContainer,
-    TitleText,
     UnreadChatContainer,
 } from '../../../styles/ChattingStyle';
 import SearchInput from './SearchInput';
-import GamzaIcon from '../../../assets/HomePage/GamzaIcon.svg';
+import GamzaIcon from '../../../assets/HomePage/gamzaIcon.svg';
 
 import ChatRoomList from './ChatRoomList';
 const ChatState = () => {
