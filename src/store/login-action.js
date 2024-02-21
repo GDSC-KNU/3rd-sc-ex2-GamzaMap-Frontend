@@ -7,7 +7,7 @@ export const loginResult = (email, password) => {
     return async (dispatch) => {
         try {
             const response = await axios.post(
-                `${BASE_URL}/user/login`,
+                `${BASE_URL}/auth/login`,
                 { email, password },
                 {
                     headers: {
