@@ -68,7 +68,7 @@ export const InputLabel = styled.label`
 export const InputItem = styled.input`
     height: 33px;
     align-self: stretch;
-
+    padding: 0 10px;
     border-radius: 5px;
     border: 1.25px solid #000;
 `;
