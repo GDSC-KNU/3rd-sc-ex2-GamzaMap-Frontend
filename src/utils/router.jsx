@@ -47,13 +47,19 @@ const router = createBrowserRouter([
         ],
     },
     { path: 'search', element: <SearchPage /> },
-    { path: 'pick', element: <PickPage /> },
+    {
+        path: 'pick',
+        children: [
+            { path: '', element: <PickPage /> },
+            {
+                path: 'detail',
+                children: [{ path: '', element: <StoreDetailPage /> }],
+            },
+        ],
+    },
     {
         path: 'map',
-        children: [
-            { path: '', element: <MapPage /> },
-            { path: 'detail', element: <StoreDetailPage /> },
-        ],
+        element: <MapPage />,
     },
     // { path: 'detail', element: <DetailPage /> },
 ]);
