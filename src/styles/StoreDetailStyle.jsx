@@ -24,7 +24,7 @@ export const TitleContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     flex-shrink: 0;
 
     border-radius: 10px;
@@ -49,22 +49,35 @@ export const TitleText = styled.h1`
 `;
 
 export const InfoContainer = styled.div`
-    display: flex;
+    /* display: flex;
     width: 172px;
     padding: 5px 0px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 10px; */
+    display: flex;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
 `;
 
 export const TextContainer = styled.div`
     display: flex;
+    padding: 5px 0px;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    align-self: stretch;
 `;
 
 export const TypeText01 = styled.span`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
     color: #000;
     font-family: Jua;
     font-size: 1rem;
@@ -84,10 +97,11 @@ export const TypeText02 = styled.span`
 
 export const RatingContainer = styled.div`
     display: flex;
-    height: 12px;
+    width: 38.5px;
     justify-content: center;
     align-items: center;
-    gap: 2.5px;
+    gap: 5px;
+    margin-left: 0.5rem;
 `;
 
 export const RatingFillStar = styled.img`
@@ -236,4 +250,12 @@ export const ButtonText = styled.span`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+`;
+
+export const TextInfoContainer = styled.div`
+    display: flex;
+    width: 104px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 `;
