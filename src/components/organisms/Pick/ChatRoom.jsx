@@ -2,7 +2,6 @@ import {
     AddressContainer,
     AddressText,
     ChattingRoomContainer,
-    EmptyStar,
     EnterButtonContainer,
     FillStar,
     Picture,
@@ -14,36 +13,51 @@ import {
     TextContainer,
 } from '../../../styles/PickStyle';
 
-import PickImg from '../../../assets/Pick/PickPicture.png';
 import FillStarImg from '../../../assets/Pick/FillStarImage.svg';
-import EmptyStarImg from '../../../assets/Pick/EmptyStarImage.svg';
 
-const ChatRoom = () => {
+import { StoreInfo } from '../../../utils/StoreInfo';
+
+import { useNavigate } from 'react-router-dom';
+
+const ChatRoom = ({ storeId }) => {
+    const storeIndex = parseInt(storeId) - 1;
+    const { title, address01, address02, image, star, review } =
+        StoreInfo[storeIndex];
+
+    const navigate = useNavigate();
+
+    let storeData = {
+        storeIndex,
+    };
+
     return (
         <>
             <ChattingRoomContainer>
                 <PictureContainer>
-                    <Picture src={PickImg} alt="PickImg" />
+                    <Picture src={image} alt="PickImg" />
                 </PictureContainer>
                 <StoreInfoContainer>
-                    <TextContainer>Goni Table</TextContainer>
+                    <TextContainer>{title}</TextContainer>
                     <RatingContainer>
-                        <RatingText>4.0</RatingText>
                         <StarContainer>
                             <FillStar src={FillStarImg} alt="FillStarImg" />
-                            <FillStar src={FillStarImg} alt="FillStarImg" />
-                            <FillStar src={FillStarImg} alt="FillStarImg" />
-                            <FillStar src={FillStarImg} alt="FillStarImg" />
-                            <EmptyStar src={EmptyStarImg} alt="EmptyStarImg" />
                         </StarContainer>
-                        <RatingText>(56)</RatingText>
+                        <RatingText>{star}</RatingText>
+                        <RatingText>• Visitor Review {review}</RatingText>
                     </RatingContainer>
                     <AddressContainer>
-                        <AddressText>Daegu Buk-gu</AddressText>
-                        <AddressText>Sangyeok-ro 6-gil 1393-13</AddressText>
+                        <AddressText>{address01}</AddressText>
+                        <AddressText>{address02}</AddressText>
                     </AddressContainer>
                 </StoreInfoContainer>
-                <EnterButtonContainer>Enter the chat room</EnterButtonContainer>
+                <EnterButtonContainer
+                    onClick={() =>
+                        navigate(`/pick/detail`, { state: storeData })
+                    }
+                >
+                    View details
+                    {/* <a href="/pick/detail">Enter the chat room</a> */}
+                </EnterButtonContainer>
             </ChattingRoomContainer>
         </>
     );

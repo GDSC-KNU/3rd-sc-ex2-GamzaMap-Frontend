@@ -12,18 +12,27 @@ import {
     StoreImgContainer,
     StoreInfoContainer,
 } from '../../../styles/StoreDetailStyle';
+import { StoreInfo } from '../../../utils/StoreInfo';
+// import StoreImage from '../../../assets/StoreDetail/KEANU.png';
 
 import { MdOutlineLocationOn } from 'react-icons/md';
 import { RiTimeLine, RiPhoneLine } from 'react-icons/ri';
 
-import StoreImage from '../../../assets/StoreDetail/KEANU.png';
+const StoreContent = ({ storeIndex }) => {
+    // const location = useLocation();
 
-const StoreContent = () => {
+    // console.log(location.state.storeId);
+
+    const { address01, address02, hour01, hour02, Detail, number } =
+        StoreInfo[storeIndex];
+
+    console.log(storeIndex);
+
     return (
         <>
             <StoreContentContainer>
                 <StoreImgContainer>
-                    <StoreImg src={StoreImage} />
+                    <StoreImg src={Detail} />
                 </StoreImgContainer>
                 <DetailContentContainer>
                     <DetailTitle>Detail</DetailTitle>
@@ -35,9 +44,7 @@ const StoreContent = () => {
                                 </IconContainer>
                                 Address
                             </InfoTextTitle>
-                            <InfoText>
-                                Daegu Buk-gu Daehyeon-ro 19-gil, 38
-                            </InfoText>
+                            <InfoText>{address01 + ' ' + address02}</InfoText>
                         </InfoTextContainer>
                         <InfoTextContainer>
                             <InfoTextTitle>
@@ -46,8 +53,8 @@ const StoreContent = () => {
                                 </IconContainer>
                                 Business Hours
                             </InfoTextTitle>
-                            <InfoText>Monday ~ Friday 08:30 ~ 24:00</InfoText>
-                            <InfoText>Saturday ~ Sunday 09:00 ~ 24:00</InfoText>
+                            <InfoText>{hour01}</InfoText>
+                            <InfoText>{hour02}</InfoText>
                         </InfoTextContainer>
                         <InfoTextContainer>
                             <InfoTextTitle>
@@ -56,11 +63,11 @@ const StoreContent = () => {
                                 </IconContainer>
                                 Phone Number
                             </InfoTextTitle>
-                            <InfoText>053-939-8862</InfoText>
+                            <InfoText>{number}</InfoText>
                         </InfoTextContainer>
                     </StoreInfoContainer>
                     <ButtonContainer>
-                        <ButtonText>Enter the Chat Room</ButtonText>{' '}
+                        <ButtonText>Enter the Chat Room</ButtonText>
                     </ButtonContainer>
                 </DetailContentContainer>
             </StoreContentContainer>
