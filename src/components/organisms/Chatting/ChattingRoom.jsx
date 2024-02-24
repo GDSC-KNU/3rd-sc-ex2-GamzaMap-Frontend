@@ -14,12 +14,12 @@ const ChattingRoom = () => {
         <>
             <ChattingRoomWrapper>
                 {storeIds.slice(0, 3).map((storeId) => (
-                    <ChatRoom key={storeId} storeId={storeId} />
+                    <ChatRoom id={storeId} key={storeId} storeId={storeId} />
                 ))}
             </ChattingRoomWrapper>
             <ChattingRoomWrapper>
                 {storeIds.slice(3).map((storeId) => (
-                    <ChatRoom key={storeId} storeId={storeId} />
+                    <ChatRoom id={storeId} key={storeId} storeId={storeId} />
                 ))}
             </ChattingRoomWrapper>
         </>

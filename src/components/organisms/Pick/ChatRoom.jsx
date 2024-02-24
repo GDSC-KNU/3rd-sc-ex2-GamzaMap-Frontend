@@ -16,17 +16,18 @@ import {
 import FillStarImg from '../../../assets/Pick/FillStarImage.svg';
 
 import { StoreInfo } from '../../../utils/StoreInfo';
+
 import { useNavigate } from 'react-router-dom';
 
 const ChatRoom = ({ storeId }) => {
     const storeIndex = parseInt(storeId) - 1;
-    const { title, address01, address02, image, star, review, link } =
+    const { title, address01, address02, image, star, review } =
         StoreInfo[storeIndex];
 
     const navigate = useNavigate();
 
-    const detailHandler = () => {
-        navigate('/pick/detail');
+    let storeData = {
+        storeIndex,
     };
 
     return (
@@ -49,8 +50,13 @@ const ChatRoom = ({ storeId }) => {
                         <AddressText>{address02}</AddressText>
                     </AddressContainer>
                 </StoreInfoContainer>
-                <EnterButtonContainer>
-                    <a href="/pick/detail">Enter the chat room</a>
+                <EnterButtonContainer
+                    onClick={() =>
+                        navigate(`/pick/detail`, { state: storeData })
+                    }
+                >
+                    View details
+                    {/* <a href="/pick/detail">Enter the chat room</a> */}
                 </EnterButtonContainer>
             </ChattingRoomContainer>
         </>
