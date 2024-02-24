@@ -7,34 +7,34 @@ export const markers = StoreInfo.map((store) => ({
 }));
 
 export const styles = [
-    {
-        featureType: 'road',
-        elementType: 'labels',
-        stylers: [{ visibility: 'on' }],
-    },
-    {
-        featureType: 'poi',
-        elementType: 'labels',
-        stylers: [{ visibility: 'off' }],
-    },
-    {
-        featureType: 'transit',
-        elementType: 'labels',
-        stylers: [{ visibility: 'on' }],
-    },
-    {
-        featureType: 'landscape',
-        elementType: 'labels',
-        stylers: [{ visibility: 'on' }],
-    },
-    {
-        featureType: 'administrative',
-        elementType: 'labels',
-        stylers: [{ visibility: 'on' }],
-    },
-    {
-        featureType: 'water',
-        elementType: 'labels',
-        stylers: [{ visibility: 'off' }],
-    },
+    // {
+    //     featureType: 'road',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'on' }],
+    // },
+    // {
+    //     featureType: 'poi',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'off' }],
+    // },
+    // {
+    //     featureType: 'transit',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'on' }],
+    // },
+    // {
+    //     featureType: 'landscape',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'on' }],
+    // },
+    // {
+    //     featureType: 'administrative',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'on' }],
+    // },
+    // {
+    //     featureType: 'water',
+    //     elementType: 'labels',
+    //     stylers: [{ visibility: 'off' }],
+    // },
 ];

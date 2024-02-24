@@ -1,9 +1,8 @@
 import { ContentContainer, PcContent } from '../../styles/ContentStyle';
-import { ChattingRoomWrapper } from '../../styles/PickStyle';
+import ChattingRoom from '../organisms/Chatting/ChattingRoom';
 
 import Header from '../organisms/layout/Header';
 import Sidebar from '../organisms/layout/Sidebar';
-import ChatRoom from '../organisms/Pick/ChatRoom';
 
 const PickTemplate = () => {
     return (
@@ -12,18 +11,7 @@ const PickTemplate = () => {
             <PcContent>
                 <Sidebar />
                 <ContentContainer>
-                    <ChattingRoomWrapper>
-                        <ChatRoom />
-                        <ChatRoom />
-                        <ChatRoom />
-                        <ChatRoom />
-                    </ChattingRoomWrapper>
-                    <ChattingRoomWrapper>
-                        <ChatRoom />
-                        <ChatRoom />
-                        <ChatRoom />
-                        <ChatRoom />
-                    </ChattingRoomWrapper>
+                    <ChattingRoom />
                 </ContentContainer>
             </PcContent>
         </>

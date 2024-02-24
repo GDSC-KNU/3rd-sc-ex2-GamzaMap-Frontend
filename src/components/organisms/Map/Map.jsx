@@ -10,7 +10,7 @@ function Map() {
         const newMap = new window.google.maps.Map(mapRef.current, {
             center: { lat: 35.8905697, lng: 128.610855264775 },
             zoom: 16,
-            maxZoom: 16,
+            maxZoom: 20,
             minZoom: 14,
             styles: styles,
         });
